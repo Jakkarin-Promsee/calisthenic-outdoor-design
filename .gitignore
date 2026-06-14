@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+
+# Allow directories to be traversed
+!*/
+
+# Allow markdown docs only
+!*.md
+
+# Allow this file
+!.gitignore
