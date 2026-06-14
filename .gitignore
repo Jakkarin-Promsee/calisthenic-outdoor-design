@@ -7,5 +7,9 @@
 # Allow markdown docs only
 !*.md
 
+# Allow design images
+!models/Final_v1_draft/final1/design/images/
+!models/Final_v1_draft/final1/design/images/**
+
 # Allow this file
 !.gitignore
