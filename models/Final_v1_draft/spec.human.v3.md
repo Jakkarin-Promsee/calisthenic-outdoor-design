@@ -1,5 +1,7 @@
 # Spec v3 — Calisthenic Equipment
 
+> 🧭 [สารบัญทั้งหมด (TOC)](final1/toc.md) · เทียบของจริง: [Spec EXPLORE 13/06](spec.explore.13062026.md) · ราคา: [ประเมิน](quotation.predict-price.md) · [ยื่นช่าง](quotation.full.md)
+>
 > **อ่านฉบับนี้เป็นหลัก (v3)** — เนื้อหาสเปกครบแล้ว · v1/v2 เก็บเป็น reference เท่านั้น
 >
 > **Design Y coordinate**: Zone 1 เริ่มที่ y=0, วัดออกด้านหน้าโครง · **Z**: วัดจากพื้น
