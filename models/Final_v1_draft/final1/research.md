@@ -1,11 +1,13 @@
 # Research — ขนาดเหล็ก · Base Plate · Anchor Bolt
 
-> 🧭 [สารบัญทั้งหมด (TOC)](toc.md) · ชุด final1: [1/3 แบบ](spec.full.md) · [2/3 การรับแรง](spec.requirement.md) · [3/3 สรุป+ฐานราก](spec.summary.md) · [⚖️ ความรับผิด](policy.liability.md)
+> [สารบัญทั้งหมด (TOC)](toc.md) · ชุด final1: [1/3 แบบ](spec.full.md) · [2/3 การรับแรง](spec.requirement.md) · [3/3 สรุป+ฐานราก](spec.summary.md) · [ความรับผิด](policy.liability.md)
 >
 > **สถานะ**: เอกสารค้นคว้าอ้างอิง — เป็นฐานข้อมูล/ที่มาของตัวเลขในชุด final1 (เดิมทำตอนรีวิว spec v2)
 > **วันที่สืบค้น**: 11 มิ.ย. 2026
 > **วิธีสืบค้น**: อ่านจากเอกสารต้นฉบับโดยตรง 2 ฉบับ (EN 16630:2015 ฉบับเต็ม PDF + Hilti HSA Technical Datasheet Jan-23) + หน้า product จริงของผู้ผลิต 9 ราย + ร้านวัสดุไทย
-> **ข้อสรุปสั้น**: เหล็กที่ใช้อยู่ใน spec v2 **แข็งแรงพอทุกชิ้น** (มี margin 3–5 เท่า) — สิ่งที่ spec ยังขาดคือ **รายละเอียด base plate + anchor bolt** ซึ่งรวบรวมไว้ครบในเอกสารนี้แล้ว รอคุยกันก่อนใส่เข้า spec
+> **ข้อสรุปสั้น**: เหล็กที่ใช้ใน spec v2 แข็งแรงพอทุกชิ้น (margin 3–5 เท่า) · รายละเอียด base plate + anchor ที่รวบรวมในเอกสารนี้ได้นำไปสรุปเป็นข้อกำหนดจริงใน [spec.summary §4](spec.summary.md) แล้ว
+>
+> **ค่าที่ใช้สร้างจริงให้ยึด [spec.summary §4](spec.summary.md) เป็นหลัก** (แผ่นฐาน 9 มม. ทุกแผ่น · สลัก M12×120 ทุกจุด) — ตัวเลขความหนา 6 มม. และสลัก M10 ที่ปรากฏในเอกสารนี้เป็นการสำรวจเบื้องต้นตอน spec v2 เก็บไว้เป็นที่มาเท่านั้น
 
 ---
 
@@ -29,16 +31,16 @@
 
 | เสา | ขนาดเหล็ก (spec v2) | ผลรีวิว | Base plate แนะนำ | Anchor แนะนำ |
 |---|---|---|---|---|
-| Pull-up Post_L/R (2.30m) | SHS 76×76 w3.2 | ✅ พอ (margin ~4×) | **200×200×9mm** เจาะ 4 รู Ø14 | **4× M12×120 wedge (HDG)** ฝัง hef 65mm |
-| Pull-up Post_Child (1.60m) | SHS 76×76 w3.2 | ✅ พอ (เหลือเฟือ) | 200×200×9mm | 4× M12×120 |
-| Snake Post_L/R (2.10m) | SHS 76×76 w3.2 | ✅ พอ | 200×200×9mm | 4× M12×120 |
-| Monkey Post เตี้ย y−1/y0/y1 (1.00m) | SHS 50×50 w2.3 | ✅ พอ | **150×150×6mm** เจาะ 4 รู Ø12 | **4× M10×100 wedge (HDG)** ฝัง hef 50mm |
-| Monkey Post_y2 (2.00m) | SHS 50×50 w2.8 | ✅ พอ (มี rail ค้ำ) | 200×200×9mm | 4× M12×120 |
-| Monkey Post_y3 (2.70m) | SHS 50×50 w2.8 | ✅ พอ **เพราะมี triangle brace** (เสาเดี่ยวไม่มี brace จะไม่ผ่าน — ดู §8.3) | 200×200×9mm | 4× M12×120 |
-| Dip frame ขา (×6 จุด) | ท่อ OD 42 w3.2 | ✅ พอ | **120×120×6mm**/ขา เจาะ 2–4 รู Ø12 | 2–4× M10×100 ต่อขา |
-| บาร์จับทุกชิ้น OD 34 / OD 42 | — | ✅ ตรง EN 16630 grip 16–45mm พอดี | — | — |
+| Pull-up Post_L/R (2.30m) | SHS 76×76 w3.2 | เพียงพอ (margin ~4×) | **200×200×9mm** เจาะ 4 รู Ø14 | **4× M12×120 wedge (HDG)** ฝัง hef 65mm |
+| Pull-up Post_Child (1.60m) | SHS 76×76 w3.2 | เพียงพอ (เผื่อมาก) | 200×200×9mm | 4× M12×120 |
+| Snake Post_L/R (2.10m) | SHS 76×76 w3.2 | เพียงพอ | 200×200×9mm | 4× M12×120 |
+| Monkey Post เตี้ย y−1/y0/y1 (1.00m) | SHS 50×50 w2.3 | เพียงพอ | **150×150×6mm** เจาะ 4 รู Ø12 | **4× M10×100 wedge (HDG)** ฝัง hef 50mm |
+| Monkey Post_y2 (2.00m) | SHS 50×50 w2.8 | เพียงพอ (มี rail ค้ำ) | 200×200×9mm | 4× M12×120 |
+| Monkey Post_y3 (2.70m) | SHS 50×50 w2.8 | เพียงพอ **เพราะมี triangle brace** (เสาเดี่ยวไม่มี brace จะไม่ผ่าน — ดู §8.3) | 200×200×9mm | 4× M12×120 |
+| Dip frame ขา (×6 จุด) | ท่อ OD 42 w3.2 | เพียงพอ | **120×120×6mm**/ขา เจาะ 2–4 รู Ø12 | 2–4× M10×100 ต่อขา |
+| บาร์จับทุกชิ้น OD 34 / OD 42 | — | ตรงตาม EN 16630 grip 16–45mm พอดี | — | — |
 
-> ทุกตัวเลขในตารางนี้มีที่มาในเอกสาร — base plate ดู §5, anchor ดู §6, การคำนวณดู §8
+> ทุกตัวเลขในตารางนี้มีที่มาในเอกสาร — base plate ดู §5, anchor ดู §6, การคำนวณดู §8 · **ค่าฐานราก/สลักสรุปสุดท้ายให้ยึด [spec.summary §4](spec.summary.md) (แผ่น 9 มม. ทุกแผ่น · M12×120 ทุกจุด)**
 
 ---
 
@@ -57,9 +59,9 @@
 สูตร: `Gn = n×m + 1.64×σ×√n` โดย m = 78kg (ผู้ชายวัย 18–65 เปอร์เซ็นไทล์ 50), σ = 12.6kg และ `Cdyn = (1+n)/n`
 
 → แปลความ: **1 user station ต้องออกแบบรับ ~198kg (แรงดิ่ง รวม dynamic แล้ว)** — ตัวคูณ dynamic ×2 ครอบคลุม kipping/แกว่งตัวแล้วในเชิงมาตรฐาน
-→ โครงของเรา: pull-up bar ออกแบบที่ n=2 (ผู้ใหญ่+เด็ก) = 2,722 N กระจาย 2 เสา · monkey bar zone หนึ่งๆ มีคนโหนได้ 1 คน = 1,942 N ต่อซี่
+→ โครงของโครงการนี้: pull-up bar ออกแบบที่ n=2 (ผู้ใหญ่+เด็ก) = 2,722 N กระจาย 2 เสา · monkey bar zone หนึ่งๆ มีคนโหนได้ 1 คน = 1,942 N ต่อซี่
 
-- เครื่องต้อง **"permanently connected to the substrate"** — ยึดพื้นถาวร (แนวทาง base plate + bolt ของมึงตรงข้อนี้)
+- เครื่องต้อง **"permanently connected to the substrate"** — ยึดพื้นถาวร (แนวทาง base plate + bolt ของโครงการนี้ตรงข้อนี้)
 - พิสูจน์ความแข็งแรงได้ด้วย (a) การคำนวณตาม EN 1176-1:2008 Annex A/B โดยใช้ Table 1 ข้างบน หรือ (b) ทดสอบจริง
 
 ### 2.2 ขนาด grip (Clause 4.3.12)
@@ -75,14 +77,14 @@
 | ยืน (standing) | พื้นรองเท้า → พื้น | 2.0m |
 | ห้อยโหน (hanging) | **ระดับมือจับ − 1m** → พื้น | 3.0m |
 
-→ ของเรา: pull-up 2.20m → fall height 1.20m ✓ · monkey apex 2.70m → 1.70m ✓ · ทุกชิ้นต่ำกว่าเพดาน 3m สบาย แต่ **ต้องมีพื้นรองรับแรงกระแทกตามระดับ fall height** (EN 1177) — แผน EPDM 25mm ใน CLAUDE.md ต้องเช็ค critical fall height ของวัสดุจริงตอนซื้อ (EPDM 25mm ทั่วไป rated ~1.0m — โซน monkey 1.7m อาจต้องหนากว่าหรือใช้ยางเม็ดหนาขึ้น — **ประเด็นค้าง §10**)
+→ ของโครงการนี้: pull-up 2.20m → fall height 1.20m · monkey apex 2.70m → 1.70m · ทุกชิ้นต่ำกว่าเพดาน 3m แต่ **ต้องมีพื้นรองรับแรงกระแทกตามระดับ fall height** (EN 1177) — แผน EPDM 25mm ในแบบ ควรตรวจ critical fall height ของวัสดุจริงตอนซื้อ (EPDM 25mm ทั่วไป rated ~1.0m — โซน monkey 1.7m อาจต้องหนากว่าหรือใช้ยางเม็ดหนาขึ้น — **ประเด็นค้าง §10**)
 
 ### 2.4 Foundations (Clause 4.3.15)
 
 - ฐานราก **ห้ามเป็นจุดสะดุด/กระแทก** (tripping, impact hazard)
 - กรณีพื้นวัสดุร่วน (ทราย/ยางเม็ด): ยอด footing ลึก ≥200mm ใต้ผิว หรือตัว fixing ลึก ≥400mm (Figure 12: หลุมลึก ≥400mm บากขอบ 45°)
 - **ปลาย bolt/สกรูที่โผล่จากฐานต้องลึก ≥400mm หรือถูกครอบปิด**
-- กรณีของมึง (base plate บนพื้นปูนเรียบ): มาตรฐานยอมรับ — เทียบ Deportesurbanos ที่ระบุวิธีติดตั้ง "expansion plugs on concrete cubes or slabs" ตรงๆ — แต่ต้องจัดการขอบ plate + หัว bolt ตาม §2.5
+- กรณีของโครงการนี้ (base plate บนพื้นปูนเรียบ): มาตรฐานยอมรับ — เทียบ Deportesurbanos ที่ระบุวิธีติดตั้ง "expansion plugs on concrete cubes or slabs" โดยตรง — แต่ต้องจัดการขอบ plate + หัว bolt ตาม §2.5
 
 ### 2.5 Surface finish (Clause 4.3.3) — เกี่ยวกับหัว bolt โดยตรง
 
@@ -95,7 +97,7 @@
 
 ## 3. Brand survey
 
-ไล่จากระดับ commercial park → prosumer → home rig (เรียงตามความใกล้เคียงกับงานเรา)
+ไล่จากระดับ commercial park → prosumer → home rig (เรียงตามความใกล้เคียงกับงานนี้)
 
 ### 3.1 ตารางรวม
 
@@ -105,18 +107,18 @@
 | **KOMPAN** (DK) | commercial park, EN 16630/1176 | **Ø101.6mm** pre-galvanized | dip/parallel grip **Ø38mm** HDG | pre-galv + HDG | in-ground footing หรือ **surface mount: steel footing + expansion bolts** |
 | **BarManiaPro** (EU) | commercial street workout, NEN-EN 16630:2015 | column ยาว 3,400mm (โผล่ ~2.5m = **ฝังดิน ~0.9m**) | **Ø33.7mm** · รุ่น Basic Ø32mm | 2-coat system | ฝัง footing (มาตรฐานสนามสาธารณะ) · max user 130kg · warranty 25 ปี |
 | **Kenguru Pro** (EU) | commercial, TÜV/GOST | ไลน์เก่า: ท่อโค้ง **Ø48mm** (PK series) · ไลน์ใหม่ 2024: เสา aluminum anodized + แนวนอน stainless | — | anodize / zinc primer | ฝัง footing |
-| **TOLYMP** (DE) | **prosumer สวนบ้าน** — ใกล้งานเรามากสุด | **RHS 80×60mm wall 3.0mm** stainless V2A | Ø33mm (gym bar) | stainless (ไลน์เหล็ก galv มีเฉพาะ H-post) | **ฝังคอนกรีตลึก ~60cm** เทียบเสาตรง + ใช้ M12 threaded rod ตั้งระยะ · ปรับสูง-ต่ำด้วย M12 star-grip |
-| **GetRXD** (US) | commercial/backyard rig | **SHS 3"×3" (76mm)** 11-gauge (~3.0mm) หรือ 7-gauge (~4.6mm) | Ø1.25" (~32mm) | **hot-dip galvanized ทั้งใน-นอก** | **base plate เจาะรูสำเร็จ + concrete anchor 4 ชุด** (แถมมากับ rig) — โมเดลเดียวกับแผนของมึงเป๊ะ |
+| **TOLYMP** (DE) | **prosumer สวนบ้าน** — ใกล้เคียงงานนี้มากที่สุด | **RHS 80×60mm wall 3.0mm** stainless V2A | Ø33mm (gym bar) | stainless (ไลน์เหล็ก galv มีเฉพาะ H-post) | **ฝังคอนกรีตลึก ~60cm** เทียบเสาตรง + ใช้ M12 threaded rod ตั้งระยะ · ปรับสูง-ต่ำด้วย M12 star-grip |
+| **GetRXD** (US) | commercial/backyard rig | **SHS 3"×3" (76mm)** 11-gauge (~3.0mm) หรือ 7-gauge (~4.6mm) | Ø1.25" (~32mm) | **hot-dip galvanized ทั้งใน-นอก** | **base plate เจาะรูสำเร็จ + concrete anchor 4 ชุด** (แถมมากับ rig) — โมเดลเดียวกับแผนของโครงการนี้พอดี |
 | **Rogue** (US) | commercial rig | 3"×3" 11-gauge, hardware 5/8" (≈16mm) | Ø32–43mm | powder coat (ไลน์ in-door) | base plate + **HD concrete anchor** (สลักถอดได้ รูเจาะ 3/8") |
 | **Eleiko Prestera** (SE) | commercial outdoor | โครง rig galvanized | **Ø33mm** (ระบุว่า optimal grip) | galvanized | base plate + anchor |
 | **GORNATION / FitnessKIT** (DE) | prosumer dip bar | — | **Ø40mm / Ø43mm** | powder/galv | — |
 
 ### 3.2 ข้อสังเกตสำคัญจากตาราง
 
-1. **เสา commercial park (Ø101–114mm) ใหญ่กว่าของเรา 1.5 เท่า — แต่นั่นคือสเปกรับคนพร้อมกัน 5+ คนในสวนสาธารณะ** (EN Table 1: n=5 → 5,133 N) และต้องกัน vandalism · ส่วน **rig/home segment (GetRXD, Rogue, TOLYMP) ใช้ 76mm หรือ 80×60mm wall ~3mm — ตรงรุ่นกับ SHS 76×76 w3.2 ของเราพอดี** → ขนาดเสาใน spec v2 อยู่ในไลน์เดียวกับผู้ผลิตกลุ่มที่ตรง use case
-2. **บาร์จับ Ø33–34mm คือ consensus ของทั้งวงการ** (Deportesurbanos 33.7 / BarManiaPro 33.7 / Eleiko 33 / TOLYMP 33) → OD 34 ของเราถูกต้อง
-3. **Dip grip 38–43mm คือ consensus** (KOMPAN 38 / GORNATION 40 / FitnessKIT 43) → OD 42 ของเราถูกต้อง
-4. การยึดพื้นมี 2 ค่ายชัดเจน: **ค่ายยุโรปสนามสาธารณะนิยมฝัง footing ลึก 60–90cm** (TOLYMP, BarManiaPro) ส่วน **ค่าย rig อเมริกา + ตัวเลือก surface ของ KOMPAN/Deportesurbanos ใช้ base plate + expansion anchor บนพื้นคอนกรีต** → แผน base plate ของมึงมีผู้ผลิตระดับ commercial ทำเป็นมาตรฐานอยู่จริง ไม่ใช่ทางลัด
+1. **เสา commercial park (Ø101–114mm) ใหญ่กว่าของโครงการนี้ 1.5 เท่า — แต่นั่นคือสเปกรับคนพร้อมกัน 5+ คนในสวนสาธารณะ** (EN Table 1: n=5 → 5,133 N) และต้องกัน vandalism · ส่วน **rig/home segment (GetRXD, Rogue, TOLYMP) ใช้ 76mm หรือ 80×60mm wall ~3mm — ตรงรุ่นกับ SHS 76×76 w3.2 ของโครงการนี้พอดี** → ขนาดเสาใน spec v2 อยู่ในไลน์เดียวกับผู้ผลิตกลุ่มที่ตรง use case
+2. **บาร์จับ Ø33–34mm คือ consensus ของทั้งอุตสาหกรรม** (Deportesurbanos 33.7 / BarManiaPro 33.7 / Eleiko 33 / TOLYMP 33) → OD 34 ของโครงการนี้ถูกต้อง
+3. **Dip grip 38–43mm คือ consensus** (KOMPAN 38 / GORNATION 40 / FitnessKIT 43) → OD 42 ของโครงการนี้ถูกต้อง
+4. การยึดพื้นมี 2 ค่ายชัดเจน: **ค่ายยุโรปสนามสาธารณะนิยมฝัง footing ลึก 60–90cm** (TOLYMP, BarManiaPro) ส่วน **ค่าย rig อเมริกา + ตัวเลือก surface ของ KOMPAN/Deportesurbanos ใช้ base plate + expansion anchor บนพื้นคอนกรีต** → แผน base plate ของโครงการนี้มีผู้ผลิตระดับ commercial ทำเป็นมาตรฐานอยู่จริง มิใช่การลดทอนมาตรฐาน
 5. ตัวเลขอ้างอิงขนาด base ของจริง: **Deportesurbanos ใช้ anchor base Ø300mm กับเสา Ø114** (อัตราส่วน base ≈ 2.6× เสา) → เสา 76mm ตามอัตราส่วนนี้ ≈ 200mm — ตรงกับที่คำนวณใน §5
 
 ---
@@ -127,34 +129,34 @@
 
 | รายการ | spec v2 | Benchmark | ผล |
 |---|---|---|---|
-| เสา 2.30m | SHS 76×76 w3.2 | GetRXD 76mm/3.0–4.6mm (เสาสูง 12–15 ฟุต!) · TOLYMP 80×60/3.0 | ✅ อยู่กลางช่วง — เสาเราสูงแค่ 2.3m เตี้ยกว่า rig พวกนี้ครึ่งหนึ่ง |
-| บาร์ z=2.20m | OD 34 w3.2 | Eleiko 33 / BarManiaPro 33.7 | ✅ ตรง |
-| ความยาวบาร์ 1.50m | — | BarManiaPro crossbar 1.45m | ✅ ตรงเป๊ะ (เขา rate 130kg) |
-| บาร์เด็ก z=1.50m | OD 34 | EN 1176 child grip 16–45 | ✅ |
+| เสา 2.30m | SHS 76×76 w3.2 | GetRXD 76mm/3.0–4.6mm (เสาสูง 12–15 ฟุต) · TOLYMP 80×60/3.0 | ผ่าน — อยู่กลางช่วง · เสาของโครงการนี้สูงเพียง 2.3m เตี้ยกว่า rig เหล่านี้ราวครึ่งหนึ่ง |
+| บาร์ z=2.20m | OD 34 w3.2 | Eleiko 33 / BarManiaPro 33.7 | ผ่าน — ตรงตามมาตรฐาน |
+| ความยาวบาร์ 1.50m | — | BarManiaPro crossbar 1.45m | ผ่าน — ตรงพอดี (ผู้ผลิตกำหนดพิกัด 130kg) |
+| บาร์เด็ก z=1.50m | OD 34 | EN 1176 child grip 16–45 | ผ่าน |
 
 ### PIECE 2 — Snake Bar
 
 | รายการ | spec v2 | Benchmark | ผล |
 |---|---|---|---|
-| เสา 2.10m | SHS 76×76 w3.2 | Deportesurbanos snake bar ใช้เสาเดียวกับ pull-up (Ø114 commercial) | ✅ logic เดียวกับ PIECE 1 |
-| Wave bar | OD 34 w3.2, 8 bends R100 | Deportesurbanos/BarManiaPro Ø33.7 | ✅ R100 = 3×OD มาตรฐาน rotary-draw |
-| Side U-grips | OD 34, R100 | — (ไม่มี brand เทียบตรง — custom) | ✅ grip ผ่าน EN · weld 2 จุด/ชิ้น ดู §8.4 |
+| เสา 2.10m | SHS 76×76 w3.2 | Deportesurbanos snake bar ใช้เสาเดียวกับ pull-up (Ø114 commercial) | ผ่าน — หลักการเดียวกับ PIECE 1 |
+| Wave bar | OD 34 w3.2, 8 bends R100 | Deportesurbanos/BarManiaPro Ø33.7 | ผ่าน — R100 = 3×OD มาตรฐาน rotary-draw |
+| Side U-grips | OD 34, R100 | — (ไม่มีแบรนด์เทียบตรง — งานสั่งทำพิเศษ) | ผ่าน — grip ผ่าน EN · เชื่อม 2 จุด/ชิ้น ดู §8.4 |
 
 ### PIECE 3 — Dip Bar
 
 | รายการ | spec v2 | Benchmark | ผล |
 |---|---|---|---|
-| Frame OD 42 w3.2 สูง 1.2m | — | KOMPAN grip Ø38 HDG (เสา Ø101.6 เพราะเป็น park) · GORNATION Ø40 · FitnessKIT Ø43 | ✅ 42 อยู่กลางช่วง 38–43 |
-| โหลด | — | EN: dip = 1 user/ช่อง → 1,942 N | ✅ ท่อ Ø42×3.2 ยาว span 620mm รับได้สบาย (ดู §8.5) |
+| Frame OD 42 w3.2 สูง 1.2m | — | KOMPAN grip Ø38 HDG (เสา Ø101.6 เพราะเป็น park) · GORNATION Ø40 · FitnessKIT Ø43 | ผ่าน — OD 42 อยู่กลางช่วง 38–43 |
+| โหลด | — | EN: dip = 1 user/ช่อง → 1,942 N | ผ่าน — ท่อ Ø42×3.2 span 620mm รับได้ด้วย margin มาก (ดู §8.5) |
 
 ### PIECE 4 — Monkey + Flying Bar
 
 | รายการ | spec v2 | Benchmark | ผล |
 |---|---|---|---|
-| เสาเตี้ย 1.0m | SHS 50×50 w2.3 | ไม่มี brand ไหนใช้เสาเล็กกว่า 76mm ใน standalone — **แต่ของเราเป็น portal frame เสา 10 ต้น + rail ค้ำตลอด 5m** | ✅ ดูการคำนวณ §8.3 |
-| เสาสูง y2/y3 (2.0/2.7m) | SHS 50×50 w2.8 | GetRXD monkey bar rig ใช้ 76mm แต่เป็น freestanding 2–4 เสา | ✅ **ผ่านเพราะมี triangle brace** — ห้ามตัด brace ออกเด็ดขาด |
-| ซี่ OD 34 ห่าง 20cm | — | สนามสาธารณะทั่วไป rung Ø33.7 ห่าง 20–30cm | ✅ |
-| Rail_Z0 OD 34 | — | EN grip 16–45 | ✅ เหตุผลถูกต้องที่เปลี่ยนจาก SHS |
+| เสาเตี้ย 1.0m | SHS 50×50 w2.3 | ไม่มีแบรนด์ใดใช้เสาเล็กกว่า 76mm ในแบบ standalone — **แต่แบบนี้เป็น portal frame เสา 10 ต้น + rail ค้ำตลอด 5m** | ผ่าน — ดูการคำนวณ §8.3 |
+| เสาสูง y2/y3 (2.0/2.7m) | SHS 50×50 w2.8 | GetRXD monkey bar rig ใช้ 76mm แต่เป็น freestanding 2–4 เสา | ผ่าน — **โดยมีเงื่อนไขว่าต้องมี triangle brace** ห้ามตัด brace ออก |
+| ซี่ OD 34 ห่าง 20cm | — | สนามสาธารณะทั่วไป rung Ø33.7 ห่าง 20–30cm | ผ่าน |
+| Rail_Z0 OD 34 | — | EN grip 16–45 | ผ่าน — เหตุผลถูกต้องที่เปลี่ยนจาก SHS |
 
 ---
 
@@ -163,10 +165,10 @@
 ### 5.1 หลักการเลือกขนาด (จาก engineering practice)
 
 - **Edge distance ของ bolt บน plate**: rule of thumb ปฏิบัติ = เผื่อรอบเสา ~4d (d = เส้นผ่านศก. bolt) · ขั้นต่ำตามโค้ด (AISI S100 E.42) = 1.5d จากศูนย์ bolt ถึงขอบ plate ([Eng-Tips](https://www.eng-tips.com/threads/base-plate-design.425962/), [AWS forum](https://app.aws.org/forum/topic_show.pl?tid=8230))
-- ขนาด plate ≈ หน้าเสา + 2×(ระยะวาง bolt + edge distance): เสา 76mm + 2×(40 + 22) ≈ **200mm** → สอดคล้องอัตราส่วนจริงของ Deportesurbanos (Ø300 ต่อเสา Ø114 = 2.6×; ของเรา 200/76 = 2.6× เท่ากันพอดี)
+- ขนาด plate ≈ หน้าเสา + 2×(ระยะวาง bolt + edge distance): เสา 76mm + 2×(40 + 22) ≈ **200mm** → สอดคล้องอัตราส่วนจริงของ Deportesurbanos (Ø300 ต่อเสา Ø114 = 2.6×; ของโครงการนี้ 200/76 = 2.6× เท่ากันพอดี)
 - **ความหนา**: งานรับโมเมนต์ (เสา pull-up/snake ที่รับแรงดึงเอียง) ใช้ 9–12mm · งานรับแรงกดเป็นหลัก (เสาเตี้ย, dip) 6mm พอ — ความหนา plate ควร ≥ 2× wall ของเสาเป็นอย่างต่ำเพื่อให้รอย fillet weld รอบเสาพัฒนากำลังเต็ม
 - **รูเจาะบน plate** = clearance hole ตาม Hilti: M12 → **Ø14mm** · M10 → **Ø12mm** (ห้ามเจาะเผื่อหลวมกว่านี้ — wedge anchor ต้องการรูแนบ)
-- weld เสา-plate: fillet รอบตัว ขา ≥ wall ของเสา (3.2mm → fillet 4–5mm) + **เจาะรูระบายน้ำ 1 รูที่ก้นเสา หรือเชื่อมปิดยอดเสา** กันน้ำขังในกล่อง (จุดตายของเสากลางแจ้ง)
+- weld เสา-plate: fillet รอบตัว ขา ≥ wall ของเสา (3.2mm → fillet 4–5mm) + **เจาะรูระบายน้ำ 1 รูที่ก้นเสา หรือเชื่อมปิดยอดเสา** กันน้ำขังในกล่อง (จุดเสื่อมหลักของเสากลางแจ้ง)
 
 ### 5.2 ตารางขนาดแนะนำต่อเสา
 
@@ -179,11 +181,13 @@
 | Dip frame (3 เฟรม × 2 ขา) | 6 | **120×120×6mm** หรือแผ่นกลม Ø120 | 2× Ø12 (แนว Y) | 80mm | ขาท่อกลม Ø42 weld ลง plate |
 
 > รวมวัสดุ: plate 200×200×9 = 9 แผ่น · 150×150×6 = 6 แผ่น · 120×120×6 = 6 แผ่น
-> ร้านไทยรับตัด+เจาะตามแบบ (ดู §9.2) — ส่งแบบ DXF/มิติให้ร้านเจาะมาเลย ช่างหน้างานไม่ต้องเจาะเอง
+> ร้านไทยรับตัด+เจาะตามแบบ (ดู §9.2) — ส่งแบบ DXF/มิติให้ร้านเจาะให้ ช่างหน้างานไม่ต้องเจาะเอง
+>
+> **หมายเหตุ (ปรับปรุงภายหลัง):** โครงการสรุปใช้ **แผ่นหนา 9 มม. ทุกแผ่น** (รวม 150×150 และ 120×120) และ **สลัก M12×120 ทุกจุด** (รูเจาะ Ø14) ตาม [spec.summary §4](spec.summary.md) · ส่วนการจัดสรรขนาดแผ่น (เสาสูง y2/y3 → 200×200, เสาเตี้ย → 150×150) ตรงกับตารางด้านบน
 
 ### 5.3 ทำไมไม่ต้องมี gusset (ครีบค้ำ)
 
-เสาทุกต้นรับโมเมนต์สูงสุด ~2.2 kN·m (ดู §8.2) — plate 9mm ที่ยื่นจากหน้าเสา ~60mm มี bending capacity ของแผ่นเองพอรับ prying force ระดับนี้ (แรงดึง bolt ฝั่งเดียว ≤8 kN) ถ้าอยาก margin เพิ่มในเสา Post_y3 จะเติม gusset 2 ใบ (50×50×6mm) ฝั่งรับแรงก็ได้ แต่ **ไม่จำเป็นจากตัวเลข** — เก็บเป็น option ตอนคุยกับช่าง
+เสาทุกต้นรับโมเมนต์สูงสุด ~2.2 kN·m (ดู §8.2) — plate 9mm ที่ยื่นจากหน้าเสา ~60mm มี bending capacity ของแผ่นเองพอรับ prying force ระดับนี้ (แรงดึง bolt ฝั่งเดียว ≤8 kN) ถ้าอยาก margin เพิ่มในเสา Post_y3 จะเติม gusset 2 ใบ (50×50×6mm) ฝั่งรับแรงก็ได้ แต่ **ไม่จำเป็นจากตัวเลข** — เก็บเป็นทางเลือกไว้พิจารณากับช่าง
 
 ---
 
@@ -191,11 +195,11 @@
 
 ### 6.1 ชนิดที่เหมาะ: wedge anchor (พุกเวดจ์/พุกตะกั่วเหล็ก)
 
-ตรงกับที่ผู้ผลิต commercial ใช้จริง — Deportesurbanos: "metal expansion plugs on concrete slabs" · KOMPAN: "steel footings and expansion bolts" · GetRXD แถม concrete anchor มากับ rig — งานเราโหลด static + dynamic ปานกลาง พื้นคอนกรีตไม่แตกร้าว → wedge anchor มาตรฐานพอ ไม่ต้องถึง chemical anchor (เก็บ chemical ไว้เป็น fallback ถ้าเจอปูนหน้างานคุณภาพต่ำ/รูเจาะพลาด — ราคาแพงกว่าแต่ติดตั้งให้อภัยกว่า)
+ตรงกับที่ผู้ผลิต commercial ใช้จริง — Deportesurbanos: "metal expansion plugs on concrete slabs" · KOMPAN: "steel footings and expansion bolts" · GetRXD แถม concrete anchor มากับ rig — งานนี้รับโหลด static + dynamic ปานกลาง พื้นคอนกรีตไม่แตกร้าว → wedge anchor มาตรฐานพอ ไม่ต้องถึง chemical anchor (เก็บ chemical ไว้เป็น fallback ถ้าเจอปูนหน้างานคุณภาพต่ำ/รูเจาะพลาด — ราคาแพงกว่าแต่ทนความผิดพลาดในการติดตั้งได้มากกว่า)
 
 ### 6.2 ข้อมูลเต็มจาก Hilti HSA Technical Datasheet (Jan-2023, ETA-11/0374)
 
-อ่านจาก[ต้นฉบับ PDF](https://kalaomran.com/wp-content/uploads/2023/11/Technical-data-sheet-for-the-HSA-stud-anchor-Technical-information-ASSET-DOC-2027424.pdf) — ใช้ Hilti เป็น reference spec แล้วเทียบเกรดกับพุกไทยตอนซื้อจริง (ค่า capacity ของพุกโนเนมให้หาร 1.5–2 เผื่อไว้)
+อ่านจาก[ต้นฉบับ PDF](https://kalaomran.com/wp-content/uploads/2023/11/Technical-data-sheet-for-the-HSA-stud-anchor-Technical-information-ASSET-DOC-2027424.pdf) — ใช้ Hilti เป็น reference spec แล้วเทียบเกรดกับพุกไทยตอนซื้อจริง (ค่า capacity ของพุกที่ไม่มีเอกสารรับรองให้หาร 1.5–2 เผื่อไว้)
 
 #### Setting details (คอนกรีต C20/25 ไม่แตกร้าว)
 
@@ -219,15 +223,16 @@
 | Tension Nrec (kN) ตาม hef | 5.9 / **8.3** / 11.9 | 8.3 / **12.3** / 16.7 | 12.3 / 16.8 / 23.8 |
 | Shear Vrec (kN) | 10.8–12.9 | **16.6–16.9** | 29.1–32.3 |
 
-→ **M12 ฝัง hef 65mm: รับดึง 12.3 kN/ตัว = ~1.2 ตัน** — เทียบ demand ของเราต่อตัวสูงสุด ~4 kN (§8.2) = margin ×3
-→ เสาเตี้ย monkey ใช้ M10 hef 50 (8.3 kN/ตัว) เหลือเฟือ
+→ **M12 ฝัง hef 65mm: รับดึง 12.3 kN/ตัว = ~1.2 ตัน** — เทียบ demand ของโครงการนี้ต่อตัวสูงสุด ~4 kN (§8.2) = margin ×3
+→ เสาเตี้ย monkey ใช้ M10 hef 50 (8.3 kN/ตัว) เผื่อมาก
 
 #### วัสดุ + ความยาวที่ต้องสั่ง
 
 - รุ่น **HSA ธรรมดา = ชุบซิงค์ ≥5µm — ไม่พอสำหรับกลางแจ้งถาวร** · กลางแจ้งต้องรุ่น **HSA-F (hot-dip galvanized ≥42µm)** หรือ stainless (HSA-R) — พุกไทยก็มีเกรด HDG ขาย (§9.1)
 - ความยาวที่แนะนำ: **M12×120** → ฝัง hnom 79 (hef 65) เหลือโผล่ ~41mm = nut 10 + แหวน 2.5 + plate 9 → เหลือเกลียวโผล่เหนือ nut ~19mm → **ตัดทิ้ง/ครอบ dome cap ตาม EN 4.3.3**
 - M10×100 → ฝัง hnom 60 (hef 50) + plate 6 + nut 8 → โผล่ ~26mm → จัดการแบบเดียวกัน
-- จำนวนรวมทั้งโปรเจกต์: **M12×120 = 36 ตัว** (9 เสา × 4) + **M10×100 = 36 ตัว** (เสาเตี้ย 6×4 + dip 6×2) + spare ~10%
+- จำนวนรวมทั้งโครงการ: **M12×120 = 36 ตัว** (9 เสา × 4) + **M10×100 = 36 ตัว** (เสาเตี้ย 6×4 + dip 6×2) + spare ~10%
+- **หมายเหตุ (ปรับปรุงภายหลัง):** โครงการสรุปใช้ **สลัก M12×120 ทุกจุด** (รวมเสาเตี้ยและขา dip) แทนการผสม M10 → รวมเป็น **M12×120 = 72 ตัว** ตาม [spec.summary §4](spec.summary.md) · ตัวเลข M10 ด้านบนเก็บไว้เป็นที่มาของการสำรวจเท่านั้น
 
 ### 6.3 ขั้นตอนติดตั้งที่ถูกต้อง (จาก datasheet — ใส่ลง quotation ช่างได้)
 
@@ -248,7 +253,7 @@
 | ระยะ bolt → ขอบ slab | ≥70mm (ขั้นต่ำ) · **≥100mm (แนะนำ — ได้ capacity เต็ม)** | cmin / ccr,N |
 | สภาพปูน | ไม่แตกร้าวบริเวณติดตั้ง | HSA เป็นพุกสำหรับ uncracked concrete |
 
-→ floor_v1 ใน design เป็น slab 6×5m หนา 0.30m — **ผ่านทุกข้อแบบขาดลอย** ✅
+→ floor_v1 ใน design เป็น slab 6×5m หนา 0.30m — **ผ่านทุกข้ออย่างชัดเจน**
 → ของจริงหน้างาน: ถ้าจุดไหนเป็นปูนเก่า ต้องวัดความหนาจริง ≥140mm ก่อน (สว่านเจาะนำเช็คได้) และเสาทุกต้นใน layout ปัจจุบันห่างขอบ slab >100mm อยู่แล้วถ้าวางตาม margin 0.5m ใน plot
 → TOLYMP เป็นข้อมูลเทียบฝั่งฝัง: footing ลึก ~60cm ต่อเสา — ถ้าอนาคตมีชิ้นไหนตั้งนอก slab ใช้สูตรนี้ (หลุม Ø30×ลึก 60cm เทปูนหุ้มเสา)
 
@@ -256,7 +261,7 @@
 
 ## 8. Sanity check
 
-> ⚠️ ทั้ง section นี้คือ **ประมาณการเบื้องต้นมือเปล่า** (first-order estimate) เพื่อยืนยันว่า order of magnitude ถูก — ไม่ใช่ structural calculation ฉบับเซ็นแบบ · สมมติฐาน: เหล็กกล่องไทย มอก./STKR400 fy ≈ 245 MPa · โหลดจาก EN Table 1
+> **หมายเหตุ** ทั้งส่วนนี้คือ **ประมาณการเบื้องต้น** (first-order estimate) เพื่อยืนยันว่า order of magnitude ถูกต้อง — มิใช่การคำนวณโครงสร้างฉบับที่วิศวกรลงนามรับรอง · สมมติฐาน: เหล็กกล่องไทย มอก./STKR400 fy ≈ 245 MPa · โหลดจาก EN Table 1
 
 ### 8.1 คุณสมบัติหน้าตัด
 
@@ -268,33 +273,35 @@
 | ท่อ OD 42.4×3.2 | 3.6 | 0.88 |
 | ท่อ OD 34×3.2 | 2.2 | 0.55 |
 
+> **หมายเหตุ OD ท่อ 1¼″:** ค่าจริงของ 1¼″ BSP ≈ OD 42.4 มม. (ใช้ในตารางนี้) · ชุดเอกสารสเปก (spec.full / spec.summary) ใช้ค่าอนุรักษ์ OD 42 มม. → section modulus ต่างกันประมาณ 2% (3,519 เทียบ 3,594 มม³) ไม่กระทบข้อสรุป
+
 ### 8.2 เสา pull-up (กรณีหนักสุดของเสา 76mm)
 
-- โหลดดิ่ง EN n=2: 2,722 N ÷ 2 เสา → axial จิ๊บจ๊อย (เสารับ axial ได้เป็นร้อย kN) — ไม่ critical
+- โหลดดิ่ง EN n=2: 2,722 N ÷ 2 เสา → axial น้อยมาก (เสารับ axial ได้เป็นร้อย kN) — ไม่ critical
 - โหลดข้างจากการแกว่ง (kipping): ประมาณ horizontal ≈ 0.5×G ≈ **1.0 kN ที่ z=2.2m** → โมเมนต์โคนเสา ≈ 2.2 kN·m แชร์ 2 เสาผ่านบาร์ → **~1.1 kN·m/เสา**
-- เทียบ capacity 5.3 kN·m → **utilization ~21% → margin ≈ 4.8×** ✅ (แม้คิดเสาเดียวรับเต็มๆ ก็ 42%)
-- แรงดึงพุกจาก overturning เสาเดียว: M=2.2 kN·m / lever arm 0.14m (bolt pattern 140mm) ≈ 15.7 kN ÷ 2 ตัวฝั่งดึง ≈ **7.9 kN/ตัว < 12.3 kN** ✅ (และนี่คือ case เสาเดียวรับโมเมนต์ทั้งหมดซึ่ง conservative มาก)
+- เทียบ capacity 5.3 kN·m → **utilization ~21% → margin ≈ 4.8×** (แม้คิดเสาเดียวรับเต็มที่ก็ 42%)
+- แรงดึงพุกจาก overturning เสาเดียว: M=2.2 kN·m / lever arm 0.14m (bolt pattern 140mm) ≈ 15.7 kN ÷ 2 ตัวฝั่งดึง ≈ **7.9 kN/ตัว < 12.3 kN** (และเป็นกรณีเสาเดียวรับโมเมนต์ทั้งหมด ซึ่ง conservative มาก)
 
-### 8.3 เสา monkey bar — จุดที่บางที่สุดของโปรเจกต์ (แต่ผ่าน)
+### 8.3 เสา monkey bar — จุดที่บางที่สุดของโครงการ (แต่ผ่าน)
 
 - **Post_y3 (2.7m, SHS 50×50×2.8)**: คนโหน flying bar แกว่ง → horizontal ≈ 0.5–0.7 kN ที่ z=2.7m → ถ้าเสาเดี่ยวอิสระ M ≈ 1.4–1.9 kN·m ชน capacity 1.9 kN·m พอดี — **เสาเดี่ยวไม่มี brace = ไม่เหลือ margin**
-- ความจริงโครงเป็น braced frame: triangle (Post_y3 + Tri_Horiz + Rail_Z4) + Rail_Z3 + ซี่ 5 ชิ้น/zone กระจายแรงไปเสาข้างเคียง → โมเมนต์จริงต่อเสาเหลือราว 1/3–1/2 → utilization ~35–50% ✅
-- **ข้อสรุปเชิง design**: SHS 50 w2.8 พอ "เพราะ" โครงค้ำกันครบตาม spec v2 — **ถ้าวันไหนคิดตัด Tri_Horiz / Rail_Z4 / Rail_Z3 ออก ต้อง up เสาเป็น 76mm** · ระหว่างประกอบ ห้ามให้เสา y3 ยืนเดี่ยวโดยไม่มี rail ค้ำแล้วมีคนโหน
-- เสาเตี้ย 1.0m (w2.3): M สูงสุด ≈ 1.0 kN × 1.0m = 1.0 kN·m... จริงๆ โหลด monkey ปกติคือดิ่ง 1.9 kN ลงซี่ → rail แชร์ 2 ฝั่ง เสารับ axial เป็นหลัก → utilization ต่ำมาก ✅
+- ความจริงโครงเป็น braced frame: triangle (Post_y3 + Tri_Horiz + Rail_Z4) + Rail_Z3 + ซี่ 5 ชิ้น/zone กระจายแรงไปเสาข้างเคียง → โมเมนต์จริงต่อเสาเหลือราว 1/3–1/2 → utilization ~35–50%
+- **ข้อสรุปเชิง design**: SHS 50 w2.8 เพียงพอ "เพราะ" โครงค้ำกันครบตาม spec v2 — **หากในอนาคตมีการตัด Tri_Horiz / Rail_Z4 / Rail_Z3 ออก ต้องเพิ่มขนาดเสาเป็น 76mm** · ระหว่างประกอบ ห้ามให้เสา y3 ยืนเดี่ยวโดยไม่มี rail ค้ำแล้วมีคนโหน
+- เสาเตี้ย 1.0m (w2.3): M สูงสุด ≈ 1.0 kN × 1.0m = 1.0 kN·m ... ในความเป็นจริง โหลด monkey ปกติคือดิ่ง 1.9 kN ลงซี่ → rail แชร์ 2 ฝั่ง เสารับ axial เป็นหลัก → utilization ต่ำมาก
 
 ### 8.4 ซี่ + side grips (OD 34×3.2)
 
-- ซี่ยาว 1.0m จับกลางคาน: จุดอ่อนสุดคือ mid-span M = PL/4 = 1.942×1.0/4 ≈ **0.49 kN·m < 0.55** — utilization ~89%?? ดูเยอะ แต่ 1.942 kN รวม dynamic ×2 แล้ว และซี่เชื่อม 2 ปลาย (fixed-ish, M จริง ≈ PL/8 = 0.24) → utilization จริง ~45% ✅ — ตรงกับที่ทั้งวงการใช้ Ø33.7 ความยาวระดับ 1.0–1.5m เป็นมาตรฐาน
-- Side U-grip ยื่น 250mm: M = 1.942×0.25 ≈ 0.49 kN·m ที่จุด weld — case เหยียบเต็มน้ำหนัก+กระโดด · ปกติ grip ใช้มือจับ (โหลดน้อยกว่า) แต่เด็กอาจปีน → **จุด weld 2 จุด/ชิ้นบนหน้าเสาต้องเชื่อมเต็มรอบท่อ (full perimeter fillet)** ไม่ใช่ tack — note ให้ช่าง
+- ซี่ยาว 1.0m จับกลางคาน: จุดอ่อนสุดคือ mid-span M = PL/4 = 1.942×1.0/4 ≈ **0.49 kN·m < 0.55** — utilization ~89% ดูสูง แต่ 1.942 kN รวม dynamic ×2 แล้ว และซี่เชื่อม 2 ปลาย (fixed-ish, M จริง ≈ PL/8 = 0.24) → utilization จริง ~45% — ตรงกับที่อุตสาหกรรมใช้ Ø33.7 ความยาวระดับ 1.0–1.5m เป็นมาตรฐาน
+- Side U-grip ยื่น 250mm: M = 1.942×0.25 ≈ 0.49 kN·m ที่จุด weld — case เหยียบเต็มน้ำหนัก+กระโดด · ปกติ grip ใช้มือจับ (โหลดน้อยกว่า) แต่เด็กอาจปีน → **จุด weld 2 จุด/ชิ้นบนหน้าเสาต้องเชื่อมเต็มรอบท่อ (full perimeter fillet)** ไม่ใช่การเชื่อมแต้ม (tack) — ระบุให้ช่างทราบ
 
 ### 8.5 Dip bar (OD 42.4×3.2)
 
-- คานบน span 620mm รับ 1,942 N กลาง span (เกาะ 2 มือชิด): M ≈ PL/8–PL/4 ≈ 0.15–0.30 kN·m < 0.88 → utilization ≤34% ✅
-- ขาเฟรมสูง 1.2m: แรงข้างจากการ L-sit/แกว่ง ≈ 0.3 kN → M ≈ 0.36 kN·m → ~41% ✅
+- คานบน span 620mm รับ 1,942 N กลาง span (เกาะ 2 มือชิด): M ≈ PL/8–PL/4 ≈ 0.15–0.30 kN·m < 0.88 → utilization ≤34%
+- ขาเฟรมสูง 1.2m: แรงข้างจากการ L-sit/แกว่ง ≈ 0.3 kN → M ≈ 0.36 kN·m → ~41%
 
 ### 8.6 สรุป sanity check
 
-ทุกชิ้นมี margin ≥2× จาก first-order estimate ภายใต้โหลดมาตรฐาน EN — **ไม่มีชิ้นไหนต้อง up-size และไม่มีชิ้นไหน over-size จนเปลืองเงินเกินเหตุ** จุดที่ต้องเคารพ design เดิมเคร่งครัดมีจุดเดียวคือ triangle brace ของ Zone 4 (§8.3)
+ทุกชิ้นมี margin ≥2× จาก first-order estimate ภายใต้โหลดมาตรฐาน EN — **ไม่มีชิ้นใดต้องเพิ่มขนาด และไม่มีชิ้นใดใหญ่เกินจำเป็นจนสิ้นเปลือง** จุดที่ต้องยึดตามแบบเดิมอย่างเคร่งครัดมีเพียงจุดเดียวคือ triangle brace ของ Zone 4 (§8.3)
 
 ---
 
@@ -310,7 +317,7 @@
 | พุกเคมี M12 (fallback) | กรณีปูนหน้างานแย่/รูเจาะพลาด | [PK Hardware](https://www.pkhardware.com/%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/%E0%B8%9E%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%84%E0%B8%A1%E0%B8%B5/%E0%B8%9E%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%84%E0%B8%A1%E0%B8%B5%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9B%E0%B8%B1%E0%B9%88%E0%B8%99-m12-chemical-anchor-bolt) |
 | Hilti HSA-F แท้ | reference spec — แพงกว่าแต่มี ETA รับรอง | ตัวแทน Hilti TH |
 
-> **ข้อควรระวัง**: พุกซิงค์ขาว (white zinc ~5µm) ไว้ใช้ในร่ม — กลางแจ้งโดนฝน **ต้องเลือกตัว HDG หรือ stainless** ให้สอดคล้องกับธีม galvanized ทั้งโปรเจกต์ ราคาต่างกันไม่กี่สิบบาท/ตัว
+> **ข้อควรระวัง**: พุกซิงค์ขาว (white zinc ~5µm) ไว้ใช้ในร่ม — กลางแจ้งโดนฝน **ต้องเลือกตัว HDG หรือ stainless** ให้สอดคล้องกับธีม galvanized ทั้งโครงการ ราคาต่างกันไม่กี่สิบบาทต่อตัว
 
 ### 9.2 แผ่นเพลท base plate
 
@@ -320,22 +327,22 @@
 | เพลทเหล็ก 200×200mm | หนา **6 / 9 / 10 / 12mm** เจาะรูตามแบบ | [Aplus Watsadu](https://www.apluswatsadu.com/product/steel-plate-carbon-200x200-mm/) |
 | เพลท 4"/6"/8" ตัดตามแบบ ราคาโรงงาน | ปลีก-ส่ง | [Lerlert Corp](https://www.lerlertcorp.com/steel-plate/), [OneStockHome](https://www.onestockhome.com/th/product_categories/steel-plate), [TintSteel](https://tint-steel.com/steel-plate/) |
 
-> เพลทที่ขายเป็น**เหล็กดำ (carbon, ไม่ชุบ)** — โปรเจกต์เราต้องเอาไป **ชุบ hot-dip galvanizing หลัง weld กับเสา** (ชุบทั้ง assembly เสา+plate ทีเดียว = มาตรฐานเดียวกับ GetRXD ที่ชุบ "inside and out") หรืออย่างน้อยพ่น cold-galvanizing spray หนาๆ ที่รอยเชื่อม — ประเด็นนี้กระทบลำดับงานช่าง (weld ก่อน ชุบทีหลัง) ต้องใส่ใน quotation
+> เพลทที่ขายเป็น**เหล็กดำ (carbon, ไม่ชุบ)** — โครงการนี้ต้องนำไป **ชุบ hot-dip galvanizing หลัง weld กับเสา** (ชุบทั้ง assembly เสา+plate ทีเดียว = มาตรฐานเดียวกับ GetRXD ที่ชุบ "inside and out") หรืออย่างน้อยพ่น cold-galvanizing spray อย่างหนาที่รอยเชื่อม — ประเด็นนี้กระทบลำดับงานช่าง (weld ก่อน ชุบทีหลัง) ต้องใส่ใน quotation
 
-### 9.3 ของที่ spec v2 มีอยู่แล้ว (ยืนยันซ้ำ)
+### 9.3 วัสดุที่ spec v2 ระบุไว้แล้ว (ยืนยันซ้ำ)
 
-- SHS 76×76 w3.2 galv: Aplus Watsadu ✓ · SHS 50×50 w2.3/2.8 galv: หาง่ายทุกร้าน ✓ · ท่อกลม OD 34/42 galv: มาตรฐาน 1"/1¼" BSP ✓ (อ้างอิงใน spec.human.v2.md แล้ว)
+- SHS 76×76 w3.2 galv: Aplus Watsadu · SHS 50×50 w2.3/2.8 galv: หาง่ายทุกร้าน · ท่อกลม OD 34/42 galv: มาตรฐาน 1"/1¼" BSP (อ้างอิงใน spec.human.v2.md แล้ว)
 
 ---
 
 ## 10. ประเด็นค้าง
 
-เรื่องที่ research แล้วเจอ แต่ต้องตัดสินใจร่วมกันก่อนแก้ spec:
+ประเด็นที่พบจากการค้นคว้า แต่ควรตัดสินใจร่วมกันก่อนปรับ spec:
 
-1. **พื้นกันกระแทกโซน monkey/flying bar** — fall height 1.7m เกิน rating ทั่วไปของ EPDM 25mm (~1.0m) · ทางเลือก: (a) EPDM/ยางเม็ดหนาขึ้น 40–50mm เฉพาะโซนนั้น (b) ทรายหนา 200mm+ แบบสนามสาธารณะ (c) ยอมรับ risk ระดับบ้าน (มาตรฐานเป็น guideline ไม่ใช่กฎหมายไทย) — **กระทบงบ ต้องคุย**
+1. **พื้นกันกระแทกโซน monkey/flying bar** — fall height 1.7m เกิน rating ทั่วไปของ EPDM 25mm (~1.0m) · ทางเลือก: (a) EPDM/ยางเม็ดหนาขึ้น 40–50mm เฉพาะโซนนั้น (b) ทรายหนา 200mm+ แบบสนามสาธารณะ (c) ยอมรับ risk ระดับบ้าน (มาตรฐานเป็น guideline ไม่ใช่กฎหมายไทย) — **กระทบงบประมาณ ควรหารือร่วมกัน**
 2. **ชุบ HDG หลังเชื่อม plate หรือใช้ cold-galv spray** — ชุบจริงทนกว่ามากแต่ต้องส่งโรงชุบ (กระทบ logistics + ราคา ~30–40 บาท/kg) vs สเปรย์ถูกแต่ที่รอยเชื่อมจะเป็นจุดสนิมแรกใน 3–5 ปี
 3. **เกลียวพุกโผล่เหนือ nut ~19mm** — EN บอกต้องปิด: ใช้ dome cap nut M12 (หาในไทยได้) หรือให้ช่างตัดเกลียวส่วนเกิน+แต้มซิงค์ — เลือกแบบไหนใส่ quotation
-4. **Dip bar ขายึด 2 รูต่อขา พอไหม vs 4 รู** — โหลดผ่านสบาย (margin เยอะ) แต่ 4 รูกัน rocking ระยะยาวดีกว่า เพิ่มงานเจาะ 12 รู — จุดนี้กูเอียงไป 4 รูเฉพาะเฟรมนอก 2 ตัว
+4. **Dip bar ขายึด 2 รูต่อขา พอไหม vs 4 รู** — โหลดผ่านด้วย margin มาก แต่ 4 รูกัน rocking ระยะยาวได้ดีกว่า เพิ่มงานเจาะ 12 รู — ผู้จัดทำเห็นควรใช้ 4 รูเฉพาะเฟรมนอก 2 ตัว
 5. **Base plate ใต้เสา = จุดสะดุดตาม EN** — ทางแก้ระดับบ้าน: ลบมุม + ทาสีเหลืองตัดขอบ หรือถมยาง EPDM ชนขอบ plate — เลือกตอนทำพื้น
 6. งบ: วัสดุใหม่ที่เพิ่ม ≈ เพลท 21 แผ่น + พุก ~80 ตัว + ค่าชุบ/สเปรย์ — ประเมินหยาบ **3,500–8,000 THB** (ขึ้นกับข้อ 2) — ไม่กระทบงบรวม (เหลือ ~61k)
 
