@@ -1,6 +1,6 @@
 # Research — ขนาดเหล็ก · Base Plate · Anchor Bolt
 
-> [สารบัญทั้งหมด (TOC)](toc.md) · ชุด final1: [1/3 แบบ](spec.full.md) · [2/3 การรับแรง](spec.requirement.md) · [3/3 สรุป+ฐานราก](spec.summary.md) · [ความรับผิด](policy.liability.md)
+> [สารบัญทั้งหมด (TOC)](toc.md) · ชุด final1: [1/4 แกลเลอรี](design/design.gallery.md) · [2/4 แบบ](spec.full.md) · [3/4 การรับแรง](spec.requirement.md) · [4/4 สรุป+ฐานราก](spec.summary.md) · [ความรับผิด](policy.liability.md)
 >
 > **สถานะ**: เอกสารค้นคว้าอ้างอิง — เป็นฐานข้อมูล/ที่มาของตัวเลขในชุด final1 (เดิมทำตอนรีวิว spec v2)
 > **วันที่สืบค้น**: 11 มิ.ย. 2026
