@@ -11,5 +11,7 @@
 !models/Final_v1_draft/final1/design/images/
 !models/Final_v1_draft/final1/design/images/**
 
+!models/Final_v1_draft/final1/design/*.pdf
+
 # Allow this file
 !.gitignore
