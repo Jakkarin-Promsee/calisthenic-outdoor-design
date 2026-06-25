@@ -1,6 +1,6 @@
 # ใบเสนอราคา — งานก่อสร้างอุปกรณ์ออกกำลังกายกลางแจ้ง (Outdoor Calisthenic Gym)
 
-> 🧭 [สารบัญทั้งหมด (TOC)](final1/toc.md) · แบบ: [Spec v3](spec.human.v3.md) · ราคาประเมินฝั่งเรา: [predict-price](quotation.predict-price.md)
+> 🧭 [สารบัญทั้งหมด (TOC)](../../final1/toc.md) · แบบ: [Spec v3](spec.human.v3.md) · ราคาประเมินฝั่งเรา: [predict-price](quotation.predict-price.md)
 >
 > **เอกสารอ้างอิง**: แบบ `spec.human.v3.md` (11 มิ.ย. 2026) — มีแบบ 3D ประกอบทุกชิ้น
 > **ผู้ว่าจ้าง**: ______________________ โทร ______________

@@ -40,4 +40,4 @@
 
 ## ตอนนี้อยู่ตรงไหน
 - ✅ ชุด policy เสร็จแล้ว (16/06/2026)
-- ⏭️ ต่อไป: ทำ **quotation ใหม่แบบ 4 ฝ่าย** (อิงจาก `models/Final_v1_draft/quotation.full.md`)
+- ⏭️ ต่อไป: ทำ **quotation ใหม่แบบ 4 ฝ่าย** (อิงจาก `archive/specs/quotation.full.md`)

@@ -207,7 +207,7 @@
 
 **ยังค้าง / ทำต่อ:**
 
-- **ใบเสนอราคา/quotation ฉบับ 4 ฝ่าย** — ยังไม่ทำ (อิงจาก `models/Final_v1_draft/quotation.full.md` ที่มีอยู่)
+- **ใบเสนอราคา/quotation ฉบับ 4 ฝ่าย** — ยังไม่ทำ (อิงจาก `archive/specs/quotation.full.md` ที่มีอยู่)
 - ไฟล์ราคาเก่ามี: `quotation.predict-price.md` (ราคาประเมินฝั่งเรา) · `quotation.full.md` (ใบยื่นช่าง) · ไฟล์ `*.explore.13062026.md` (เดลตาจากสำรวจร้านจริง — **ยังไม่ recompute การรับน้ำหนัก ห้ามถือเป็น final**)
 - ตัดสินใจร่วมกัน 5–6 จุดใน [research.md §10](research.md) (ความหนายางโซน monkey, ชุบ HDG vs สเปรย์, ฝาครอบเกลียวพุก, จำนวนรูสลัก dip ฯลฯ)
 

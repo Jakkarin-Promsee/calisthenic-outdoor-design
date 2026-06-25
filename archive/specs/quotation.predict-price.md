@@ -1,6 +1,6 @@
 # Quotation (ประเมินราคา) — Outdoor Calisthenic Gym
 
-> 🧭 [สารบัญทั้งหมด (TOC)](final1/toc.md) · แบบ: [Spec v3](spec.human.v3.md) · ใบยื่นช่าง: [quotation.full](quotation.full.md) · ราคาจริง 13/06: [explore](quotation.explore.13062026.md)
+> 🧭 [สารบัญทั้งหมด (TOC)](../../final1/toc.md) · แบบ: [Spec v3](spec.human.v3.md) · ใบยื่นช่าง: [quotation.full](quotation.full.md) · ราคาจริง 13/06: [explore](quotation.explore.13062026.md)
 >
 > **ไฟล์นี้ = ราคาประเมินฝั่งเรา** ใช้เทียบกับใบเสนอจริงของช่าง (จดราคาจริงใน `quotation.full.md`)
 > **อิงแบบ**: `spec.human.v3.md` (COMPLETE 11 มิ.ย. 2026 — ตรวจกับโมเดล 3D แล้วทุกชิ้น)
