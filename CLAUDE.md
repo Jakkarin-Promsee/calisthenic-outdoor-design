@@ -57,14 +57,14 @@ Desktop/calisthenic-design/
 │   ├── specs/                          ← สเปก/ใบราคา ก่อนรวมเป็น final1-th/ (spec.human v1–v3 · quotation* · research · severe · *.explore.13062026)
 │   └── docs/                           ← เอกสารชุดแรกสุด (spec.md · measurements.md · quotation.md · quotation.predict.md)
 ├── models/
-│   ├── Final_v1_draft/                ← ★ WORKING FOLDER — ใช้ไฟล์ในนี้เป็นหลัก
+│   ├── final1-blender/                ← ★ WORKING FOLDER — ใช้ไฟล์ในนี้เป็นหลัก
 │   │   ├── pullup_bar_v2.blend        ← Pull-up bar (current)
 │   │   ├── snake_bar_v5.blend         ← Snake bar (current) — side bars = 4 U-grips/ข้าง
 │   │   ├── dip_bar_v3.blend           ← Dip bar (current) — OD 42mm, nub R=80mm
 │   │   ├── monkey_flying_bar_v4.blend ← Monkey+Flying bar (current) — Rail_Z0 = OD 34mm
 │   │   ├── floor_v1.blend             ← Ground platform
 │   │   └── final_main_scene.blend     ← Main scene (linked geometry)
-│   ├── pullup_bar_v1–v2.blend         ← เก่า (v2 คือ current แต่อยู่ใน Final_v1_draft/)
+│   ├── pullup_bar_v1–v2.blend         ← เก่า (v2 คือ current แต่อยู่ใน final1-blender/)
 │   ├── snake_bar_v1–v5.blend          ← เก่า
 │   ├── dip_bar_v1–v3.blend            ← เก่า
 │   ├── monkey_flying_bar_v1–v5.blend  ← เก่า (v5 ในนี้ไม่มี Rail_Z0 update)
@@ -85,7 +85,7 @@ Desktop/calisthenic-design/
 └── CLAUDE.md                          ← this file
 ```
 
-> **Versioning:** piece files keep `_vN` suffixes — highest N in `Final_v1_draft/` is current.
+> **Versioning:** piece files keep `_vN` suffixes — highest N in `final1-blender/` is current.
 > Do NOT collapse/rename versions without asking (owner compares them).
 >
 > **Quotation files (current, 11/06/2026 — สร้างจาก spec v3):**
@@ -95,22 +95,22 @@ Desktop/calisthenic-design/
 > - **ล่าสุด 13/06/2026**: `archive/specs/spec.explore.13062026.md` + `archive/specs/quotation.explore.13062026.md` = delta จากสำรวจร้านจริง (ท่อ OD34→wall 2.0, OD42→wall 2.5, bolt 1/2"×4", เพลท 9mm ทุกแผ่น) — ⚠️ ยังไม่ recompute การรับน้ำหนัก ห้ามถือเป็น final จนกว่าจะผ่านรอบคำนวณ
 >
 > **Known issue:** `models/main_scene.blend` (old) has stale link to `dip_bar.blend` (now `dip_bar_v3.blend`).
-> Use `Final_v1_draft/final_main_scene.blend` instead — has correct links.
+> Use `final1-blender/final_main_scene.blend` instead — has correct links.
 
 ---
 
 ## How to Work
 
-### Editing a piece (in Final_v1_draft)
+### Editing a piece (in final1-blender)
 1. Open the piece `.blend` via `bpy.ops.wm.open_mainfile(filepath=...)`
-   — path: `C:/Users/BTCOM/Desktop/calisthenic-design/models/Final_v1_draft/<file>.blend`
+   — path: `C:/Users/BTCOM/Desktop/calisthenic-design/models/final1-blender/<file>.blend`
 2. Make changes
 3. Save with `bpy.ops.wm.save_mainfile()` (NOT `save_as_mainfile` — that renames the file)
 4. Preview: open `final_main_scene.blend` → `bpy.ops.wm.revert_mainfile()` to reload links
 
 ### Rebuilding a piece from scratch
 Use `bpy.ops.wm.read_homefile(use_empty=True)` to clear, then rebuild all objects,
-then `bpy.ops.wm.save_as_mainfile(filepath=...)` to save into `Final_v1_draft/`.
+then `bpy.ops.wm.save_as_mainfile(filepath=...)` to save into `final1-blender/`.
 
 **Critical:** Each piece file must have exactly ONE collection with the correct name
 (e.g. `MonkeyFlyingBar`). Duplicate collection names (e.g. `MonkeyFlyingBar.001`)
@@ -265,7 +265,7 @@ def to_col(obj, col):
 | Zone 3 rung at y=3.0 | Double rung at zone 3/4 boundary | Zone 3 ends at y=2.8, Zone 4 starts at y=3.0 |
 | `sc.world is None` when rendering | Black render — no lighting | Add SUN light with `bpy.ops.object.light_add(type='SUN')` |
 | Rail_Z0 as SHS | Zone 0 entry rails are grip bars — SHS has sharp edges | Rail_Z0_Cross/L/R = OD 34mm cylinder (same as rungs) |
-| Editing old files in `models/` root | Not the current version | Always open from `models/Final_v1_draft/` |
+| Editing old files in `models/` root | Not the current version | Always open from `models/final1-blender/` |
 
 ---
 
@@ -287,7 +287,7 @@ def to_col(obj, col):
 
 ## Equipment Summary
 
-| Piece | File (in `Final_v1_draft/`) | Height | Bar OD | Key spec |
+| Piece | File (in `final1-blender/`) | Height | Bar OD | Key spec |
 |---|---|---|---|---|
 | Pull-up bar | `pullup_bar_v2.blend` | 2.30m posts · bar z=2.20m | 34mm round | SHS 76×76mm wall 3.2mm · child bar z=1.50m |
 | Snake bar | `snake_bar_v5.blend` | 2.10m posts · bar z=2.00m | 34mm grip · **42mm straight** | 2m wide · wave bar 4 U-shapes · **4 U-grips/ข้าง** (แยกชิ้น) · Bar_Straight 42mm (spec+model sync แล้ว 13/06) |

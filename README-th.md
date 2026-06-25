@@ -122,7 +122,9 @@ calisthenic-design/
 ├── final1-en/      → ชุดเอกสารภาษาอังกฤษ
 ├── final1-th/      → ชุดเอกสารภาษาไทย — source of truth
 ├── archive/        → เอกสารรุ่นเก่า (อ้างอิงเท่านั้น — ห้ามใช้สร้างจริง)
-├── models/         → ไฟล์ Blender .blend (ชุดปัจจุบันใน Final_v1_draft/)
+├── models/
+│   ├── final1-blender/ → ไฟล์ Blender ชุดปัจจุบัน + main scene (git-ignored)
+│   └── ...             → ไฟล์รุ่นเก่า (git-ignored)
 ├── renders/        → ภาพ render + วิดีโอเดินชม
 ├── scripts/        → สคริปต์ Python render/gif
 ├── assets/         → HDRI แสงสภาพแวดล้อม
@@ -132,6 +134,21 @@ calisthenic-design/
 ```
 
 > ไฟล์ `.blend`, renders, assets ถูก `.gitignore` — git เก็บเฉพาะเอกสาร `.md` และภาพแบบ/PDF ใน `final1-*/design/`
+
+---
+
+## โมเดล 3 มิติ (Blender)
+
+สร้างใน [Blender](https://www.blender.org/) ผ่าน BlenderMCP · ไฟล์ต้นฉบับอยู่ที่ `models/final1-blender/` (git-ignored · แกลเลอรีด้านล่างคือภาพเรนเดอร์ที่ export ออกมาจากไฟล์เหล่านี้)
+
+| ไฟล์ | ชิ้นงาน |
+| ---- | ------- |
+| `pullup_bar_v2.blend` | Pull-up bar — 3 เสา · บาร์ผู้ใหญ่ (z = 2.20 ม.) + บาร์เด็ก (z = 1.50 ม.) |
+| `snake_bar_v5.blend` | Snake bar — คานตรงรับโครง + บาร์ลอนคลื่น 4 ลูก + ราวจับข้างทั้งสองด้าน |
+| `dip_bar_v3.blend` | Dip bar — 3 โครง ⊓ · ช่องจับอก/ไตรเซ็ป + มือจับ C-handle nub |
+| `monkey_flying_bar_v4.blend` | Monkey + flying bar — 5 โซน · 35 ซี่ · ค้ำยันสามเหลี่ยมที่ยอด |
+| `floor_v1.blend` | พื้นคอนกรีต — แผ่น 6 × 5 ม. |
+| `final_main_scene.blend` | Main scene — ลิงก์และจัดตำแหน่งทุกชิ้นเข้าด้วยกัน |
 
 ---
 

@@ -7,7 +7,7 @@
 
 ## What Is This Project?
 
-Building an outdoor calisthenics gym at the owner's home. Budget ~150k THB (current estimate ~89k). Users: one adult + one child ~5 years old. Designs and 3D models are in `models/Final_v1_draft/`.
+Building an outdoor calisthenics gym at the owner's home. Budget ~150k THB (current estimate ~89k). Users: one adult + one child ~5 years old. Designs and 3D models are in `models/final1-blender/`.
 
 ## The Four Parties
 
@@ -25,7 +25,7 @@ Building an outdoor calisthenics gym at the owner's home. Budget ~150k THB (curr
 - Party A **cannot accept this risk** (a child will use it), so stepped back to being **purely a researcher** — no decision-making authority.
 - Party B wants the project to move forward and accepts more risk → a clear role-separation document became necessary.
 
-## Documents Created to Manage This (`models/Final_v1_draft/final1-en/`)
+## Documents Created to Manage This (`final1-en/`)
 
 - **policy.liability.md** = Internal agreement between A ↔ B (signed by Party A and B only) → shields both from liability
 - **policy.handoff.md** = Handover letter for Party C to sign (clean, concise, not confusing) → Party C acknowledges being the certifier and decision-maker

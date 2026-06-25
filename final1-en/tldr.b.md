@@ -180,7 +180,7 @@ All files are in the `final1-en/` folder
 
 ## 7. Where Are the 3D Models
 
-Located in `models/Final_v1_draft/` (built in Blender)
+Located in `models/final1-blender/` (built in Blender)
 
 | File | Description |
 |---|---|

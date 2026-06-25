@@ -122,7 +122,9 @@ calisthenic-design/
 ├── final1-en/      → English deliverable (this README links here)
 ├── final1-th/      → Thai deliverable — source of truth
 ├── archive/        → superseded drafts (reference only — do not build from these)
-├── models/         → Blender .blend files (current set in Final_v1_draft/)
+├── models/
+│   ├── final1-blender/ → current Blender piece files + main scene (git-ignored)
+│   └── ...             → older version files (git-ignored)
 ├── renders/        → still renders + walkthrough animation
 ├── scripts/        → Python render/gif scripts
 ├── assets/         → HDRI environment lighting
@@ -132,6 +134,21 @@ calisthenic-design/
 ```
 
 > `.blend` files, renders, and assets are git-ignored; only the `.md` documents and the design images/PDF under `final1-*/design/` are tracked.
+
+---
+
+## 3D Models (Blender)
+
+Built in [Blender](https://www.blender.org/) via BlenderMCP. Source files live in `models/final1-blender/` (git-ignored; the gallery below shows renders exported from them).
+
+| File | Piece |
+| ---- | ----- |
+| `pullup_bar_v2.blend` | Pull-up bar — 3 posts · adult bar (z = 2.20 m) + child bar (z = 1.50 m) |
+| `snake_bar_v5.blend` | Snake bar — structural straight bar + 4-loop wave grip + side U-grips both sides |
+| `dip_bar_v3.blend` | Dip bar — 3 × ⊓-frames · chest / triceps channels + C-handle nubs |
+| `monkey_flying_bar_v4.blend` | Monkey + flying bar — 5 zones · 35 rungs · triangle brace at apex |
+| `floor_v1.blend` | Concrete slab — 6 × 5 m platform |
+| `final_main_scene.blend` | Main scene — all pieces linked and positioned together |
 
 ---
 
