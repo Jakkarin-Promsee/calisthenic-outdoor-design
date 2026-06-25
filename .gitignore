@@ -7,11 +7,11 @@
 # Allow markdown docs only
 !*.md
 
-# Allow design images + PDF (deliverable lives at final1/ since the 25/06 refactor)
-!final1/design/images/
-!final1/design/images/**
+# Allow design images + PDF (deliverable sets: final1-th/ Thai source · final1-en/ English)
+!final1-*/design/images/
+!final1-*/design/images/**
 
-!final1/design/*.pdf
+!final1-*/design/*.pdf
 
 # Allow this file
 !.gitignore
