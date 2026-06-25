@@ -1,6 +1,6 @@
 # Quotation EXPLORE — อัปเดตราคาจริงจากการสำรวจ 13/06/2026
 
-> 🧭 [สารบัญทั้งหมด (TOC)](../../final1/toc.md) · spec คู่กัน: [Spec EXPLORE 13/06](spec.explore.13062026.md) · ฐานราคา: [predict-price](quotation.predict-price.md)
+> 🧭 [สารบัญทั้งหมด (TOC)](../../final1-th/toc.md) · spec คู่กัน: [Spec EXPLORE 13/06](spec.explore.13062026.md) · ฐานราคา: [predict-price](quotation.predict-price.md)
 >
 > **ฐาน**: `quotation.predict-price.md` (11/06/2026) + spec delta ใน `spec.explore.13062026.md`
 > **สัญลักษณ์**: ✅ = ราคาจริงจากร้าน (13/06/26) · ⏳ = ยังไม่สำรวจ (ใส่ประเมินเดิมคั่นไว้) · 📐 = ประเมินเดิมจากใบ predict
