@@ -123,8 +123,8 @@ calisthenic-design/
 ├── final1-th/      → Thai deliverable — source of truth
 ├── archive/        → superseded drafts (reference only — do not build from these)
 ├── models/
-│   ├── final1-blender/ → current Blender piece files + main scene (git-ignored)
-│   └── ...             → older version files (git-ignored)
+│   ├── final1-blender/ → current Blender piece files + main scene
+│   └── archive/        → prototype iterations (all piece versions + 3 layout experiments)
 ├── renders/        → still renders + walkthrough animation
 ├── scripts/        → Python render/gif scripts
 ├── assets/         → HDRI environment lighting
@@ -133,13 +133,15 @@ calisthenic-design/
 └── CLAUDE.md       → working notes for the AI assistant
 ```
 
-> `.blend` files, renders, and assets are git-ignored; only the `.md` documents and the design images/PDF under `final1-*/design/` are tracked.
+> Renders and assets are git-ignored. `.md` documents, design images/PDF under `final1-*/design/`, and all `.blend` files under `models/` are tracked.
 
 ---
 
 ## 3D Models (Blender)
 
-Built in [Blender](https://www.blender.org/) via BlenderMCP. Source files live in `models/final1-blender/` (git-ignored; the gallery below shows renders exported from them).
+Built in [Blender](https://www.blender.org/) via BlenderMCP. All `.blend` files are tracked under `models/`. The gallery below shows renders exported from the final design.
+
+**`models/final1-blender/`** — current design (used by the `final1-*` documents)
 
 | File | Piece |
 | ---- | ----- |
@@ -149,6 +151,17 @@ Built in [Blender](https://www.blender.org/) via BlenderMCP. Source files live i
 | `monkey_flying_bar_v4.blend` | Monkey + flying bar — 5 zones · 35 rungs · triangle brace at apex |
 | `floor_v1.blend` | Concrete slab — 6 × 5 m platform |
 | `final_main_scene.blend` | Main scene — all pieces linked and positioned together |
+
+**`models/archive/`** — prototype iterations; `final1-blender/` uses one version of each piece
+
+| Files | Notes |
+| ----- | ----- |
+| `pullup_bar_v1–v2.blend` | Pull-up bar iterations |
+| `snake_bar_v1–v5.blend` | Snake bar iterations |
+| `dip_bar_v1–v3.blend` | Dip bar iterations |
+| `monkey_flying_bar_v1–v5.blend` | Monkey + flying bar iterations |
+| `floor_v1.blend` | Concrete slab (same as final) |
+| `main_scene.blend` · `main_scene2.blend` · `main_scene3.blend` | 3 layout experiments (the 4th is `final_main_scene.blend` in `final1-blender/`) |
 
 ---
 

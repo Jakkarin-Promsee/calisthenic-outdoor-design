@@ -13,9 +13,11 @@
 
 !final1-*/design/*.pdf
 
-# Allow Blender piece files (current design set — .blend1 auto-backups stay ignored)
+# Allow Blender piece files — .blend1 auto-backups stay ignored
 !models/final1-blender/
 !models/final1-blender/*.blend
+!models/archive/
+!models/archive/*.blend
 
 # Allow this file
 !.gitignore

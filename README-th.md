@@ -123,8 +123,8 @@ calisthenic-design/
 ├── final1-th/      → ชุดเอกสารภาษาไทย — source of truth
 ├── archive/        → เอกสารรุ่นเก่า (อ้างอิงเท่านั้น — ห้ามใช้สร้างจริง)
 ├── models/
-│   ├── final1-blender/ → ไฟล์ Blender ชุดปัจจุบัน + main scene (git-ignored)
-│   └── ...             → ไฟล์รุ่นเก่า (git-ignored)
+│   ├── final1-blender/ → ไฟล์ Blender ชุดปัจจุบัน + main scene
+│   └── archive/        → prototype ทุก version + layout ทดลอง 3 แบบ
 ├── renders/        → ภาพ render + วิดีโอเดินชม
 ├── scripts/        → สคริปต์ Python render/gif
 ├── assets/         → HDRI แสงสภาพแวดล้อม
@@ -133,13 +133,15 @@ calisthenic-design/
 └── CLAUDE.md       → บันทึกการทำงานสำหรับผู้ช่วย AI
 ```
 
-> ไฟล์ `.blend`, renders, assets ถูก `.gitignore` — git เก็บเฉพาะเอกสาร `.md` และภาพแบบ/PDF ใน `final1-*/design/`
+> renders และ assets ถูก `.gitignore` · git เก็บเอกสาร `.md`, ภาพแบบ/PDF ใน `final1-*/design/`, และไฟล์ `.blend` ทั้งหมดใน `models/`
 
 ---
 
 ## โมเดล 3 มิติ (Blender)
 
-สร้างใน [Blender](https://www.blender.org/) ผ่าน BlenderMCP · ไฟล์ต้นฉบับอยู่ที่ `models/final1-blender/` (git-ignored · แกลเลอรีด้านล่างคือภาพเรนเดอร์ที่ export ออกมาจากไฟล์เหล่านี้)
+สร้างใน [Blender](https://www.blender.org/) ผ่าน BlenderMCP · ไฟล์ `.blend` ทั้งหมด track ไว้ใน `models/` · แกลเลอรีด้านล่างคือภาพเรนเดอร์ที่ export จากแบบสุดท้าย
+
+**`models/final1-blender/`** — แบบปัจจุบัน (ที่เอกสาร `final1-*` อ้างอิง)
 
 | ไฟล์ | ชิ้นงาน |
 | ---- | ------- |
@@ -149,6 +151,17 @@ calisthenic-design/
 | `monkey_flying_bar_v4.blend` | Monkey + flying bar — 5 โซน · 35 ซี่ · ค้ำยันสามเหลี่ยมที่ยอด |
 | `floor_v1.blend` | พื้นคอนกรีต — แผ่น 6 × 5 ม. |
 | `final_main_scene.blend` | Main scene — ลิงก์และจัดตำแหน่งทุกชิ้นเข้าด้วยกัน |
+
+**`models/archive/`** — prototype ทุก version · `final1-blender/` หยิบใช้แค่ version เดียวของแต่ละชิ้น
+
+| ไฟล์ | หมายเหตุ |
+| ---- | -------- |
+| `pullup_bar_v1–v2.blend` | Pull-up bar ทุก iteration |
+| `snake_bar_v1–v5.blend` | Snake bar ทุก iteration |
+| `dip_bar_v1–v3.blend` | Dip bar ทุก iteration |
+| `monkey_flying_bar_v1–v5.blend` | Monkey + flying bar ทุก iteration |
+| `floor_v1.blend` | พื้นคอนกรีต (เหมือน final) |
+| `main_scene.blend` · `main_scene2.blend` · `main_scene3.blend` | layout ทดลอง 3 แบบ (แบบที่ 4 คือ `final_main_scene.blend` ใน `final1-blender/`) |
 
 ---
 
