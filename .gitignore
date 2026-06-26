@@ -21,3 +21,7 @@
 
 # Allow this file
 !.gitignore
+
+# Renders are git-ignored (stills, animation, ~2.6 GB raw frames + a stray embedded
+# git repo under _frames/). Keep the whole tree out — anchored so !*/ can't re-traverse it.
+/renders/
