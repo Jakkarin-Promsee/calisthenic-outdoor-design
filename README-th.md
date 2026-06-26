@@ -31,6 +31,7 @@
 - [โครงสร้างที่เก็บไฟล์](#โครงสร้างที่เก็บไฟล์)
 - [มาตรฐาน](#มาตรฐาน)
 - [แกลเลอรี](#แกลเลอรี)
+- [License](#license)
 
 ---
 
@@ -194,6 +195,14 @@ EN 16630:2015 (อุปกรณ์ฟิตเนสกลางแจ้ง) 
 ![14](final1-th/design/images/14.png)
 ![15](final1-th/design/images/15.png)
 ![16](final1-th/design/images/16.png)
+
+---
+
+## License
+
+[MIT License](LICENSE) — ใช้/ดัดแปลง/แชร์ได้ฟรี **ขอแค่ใส่เครดิต** Jakkarin Promsee ([@Jakkarin-Promsee](https://github.com/Jakkarin-Promsee))
+
+เอกสารทั้งหมดเป็น **functional design และงานค้นคว้า ให้แบบ as-is ไม่รับประกันและไม่รับผิดใดๆ** — มิใช่วิศวกรรมที่รับรองแล้ว · ต้องให้วิศวกรผู้ได้รับใบอนุญาตตรวจและรับรองก่อนก่อสร้าง · ดู disclaimer ฉบับเต็มใน [LICENSE](LICENSE)
 
 ---
 

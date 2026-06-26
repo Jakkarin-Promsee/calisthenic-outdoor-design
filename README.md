@@ -31,6 +31,7 @@
 - [Repository layout](#repository-layout)
 - [Standards](#standards)
 - [Gallery](#gallery)
+- [License](#license)
 
 ---
 
@@ -194,6 +195,14 @@ EN 16630:2015 (outdoor fitness equipment) · EN 1176 (playground safety) · EN 1
 ![14](final1-en/design/images/14.png)
 ![15](final1-en/design/images/15.png)
 ![16](final1-en/design/images/16.png)
+
+---
+
+## License
+
+[MIT License](LICENSE) — free to use, adapt, and share **with attribution** to Jakkarin Promsee ([@Jakkarin-Promsee](https://github.com/Jakkarin-Promsee)).
+
+These materials are **functional design and research, provided as-is with no warranty and no liability** — not certified engineering. A licensed engineer must review and certify before construction. See the [LICENSE](LICENSE) for the full disclaimer.
 
 ---
 
